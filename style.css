@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+body{
+  padding-top: 50px;
+    padding-left: 30%;
+    padding-right: 15px;
+
+}
+
+th{
+  background-color: white;
+  font-weight: lighter;
+  color: #CCCCCC;
+  font-size: 14px;
+}
+
+
+table{
+  border: solid 1px #DDDDDD;
+  border-collapse: collapse;
+}
+
+td {
+  width: 45px;
+  text-align: center;
+}
+
+td:nth-child(odd){
+  background-color: #F7F7F7;
+}
+
+/*POSIÇÃO DOS TIMES, CLASSIFICAÇÃO*/
+td:nth-child(1){
+  background-color: white;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*BORDA DAS LINHAS*/
+tr{
+  border: 1px solid #DDDDDD;
+
+}
+
+/*cores dos numeros de classificaçao*/
+tr:nth-child(-n+3) > td:nth-child(1) {
+  color: #003366;
+}
+tr:nth-child(4) > td:nth-child(1) {
+  color: #1398BE;
+}
+tr:nth-child(n+5):nth-child(-n+12) > td:nth-child(1) {
+  color: #DE9800;
+}
+tr:nth-child(n+13):nth-child(-n+16) > td:nth-child(1) {
+  color: #CCCCCC;
+}
+tr:nth-child(n+17):nth-child(-n+20) > td:nth-child(1) {
+  color: #C91B04;
+}
+
+/*EDIÇÃO DOS NOMES DOS TIMES*/
+tr:nth-child(-n+20) > td:nth-child(2) {
+  font-size: 14px;
+  color: #666666;
+  text-align: left;
+  width: 150px;
+}
+
+/*NUMEROS DENTRO DA TABELA*/
+tr > td:nth-child(n+3){
+  font-size: 14px;
+  color: #666666;
+}
+
+.gray{
+  border-bottom: 2px solid #CCCCCC;
+}
+
+label {
+  font-size: 10px;
+  color: #8F8F8F!important;
+  text-align: left;
+  font-weight: lighter;
+}
+
+.pl-3 {
+  padding-left: 3px;
+}
+
+.corAzulM {
+  color: #003366;
+}
+
+.corAzulC {
+  color: #1398BE;
+}
+
+.corLaranja {
+  color: #DE9800;
+}
+
+.corCinza {
+  color: #CCCCCC;
+}
+
+.corVermelho {
+  color: #C91B04;
+}
